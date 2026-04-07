@@ -12,6 +12,9 @@ dist/
 # Vercel
 .vercel/
 
+# Claude
+.claude/
+
 # Editor
 .vscode/
 .idea/
