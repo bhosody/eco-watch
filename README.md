@@ -8,8 +8,8 @@
 
 ---
 
-<!-- Replace the line below with an actual screenshot once available -->
-> 📸 _Screenshot / GIF coming soon_
+<img width="1919" height="880" alt="image" src="https://github.com/user-attachments/assets/aba6d2c9-79e0-4613-9db1-5a068a9a2456" />
+
 
 ---
 
