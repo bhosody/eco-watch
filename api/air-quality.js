@@ -1,14 +1,10 @@
 /**
- * Serverless function Vercel — proxy OpenWeatherMap Air Pollution API
+ * Serverless function Vercel — proxy OpenWeatherMap Air Pollution + Geocoding API
  *
  * Entrée  : GET /api/air-quality?lat=<float>&lon=<float>
- * Sortie  : JSON brut de l'API OpenWeatherMap
- *
- * Fichier .cjs pour forcer CommonJS et éviter tout conflit avec
- * "type":"module" du package.json. La clé API est lue depuis
- * OPENWEATHER_API_KEY (variable Vercel ou .env.local).
+ * Sortie  : JSON { ...air_pollution, location: { name, state, country } | null }
  */
-module.exports = async function handler(req, res) {
+export default async function handler(req, res) {
   if (req.method !== 'GET') {
     return res.status(405).json({ error: 'Method Not Allowed' })
   }
