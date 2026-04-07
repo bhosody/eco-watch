@@ -113,9 +113,3 @@ eco-watch/
 │       └── transformAirData.js # API response normalizer
 └── vite.config.js             # Dev middleware mirrors the serverless function
 ```
-
----
-
-## License
-
-MIT
